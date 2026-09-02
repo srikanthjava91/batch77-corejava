@@ -12,16 +12,25 @@ public class Customer {
 		int id = sc.nextInt();
 
 		System.out.println("Enter name : ");
+		sc.nextLine();
 		String name = sc.nextLine();
 
 		System.out.println("Enter Phone : ");
 		long ph = sc.nextLong();
 
+		System.out.println("Enter Gender info : ");
+		char c = sc.next().charAt(0);// Method Chaining
+
 		getCusterName(name);
 		getCustomerID(id);
 		getCustomerPhone(ph);
+		getGenderInfo(c);
 
 		System.out.println("main method ended ");
+	}
+
+	static void getGenderInfo(char c) {
+		System.out.println("Gender is : " + c);
 	}
 
 	static void getCustomerID(int id) {
