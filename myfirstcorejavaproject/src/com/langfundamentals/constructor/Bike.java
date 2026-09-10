@@ -19,17 +19,14 @@ public class Bike {
 	}
 
 	public Bike(String model, String brand, double price) {
-		this.model = model;
-		this.brand = brand;
-		this.price = price;
+		this(model, brand, price, 2020);
+		System.out.println("3-arg constructor called ");
 
 	}
 
 	public Bike(String model, String brand, double price, int year) {
-		this.model = model;
-		this.brand = brand;
-		this.price = price;
-		this.year = year;
+		this(model, brand, price, year, "unknown");
+		System.out.println("4-arg constructor called ");
 	}
 
 	public Bike(String model, String brand, double price, int year, String color) {
@@ -45,7 +42,7 @@ public class Bike {
 
 		Bike fz = new Bike("FZ-S", "YAMAHA", 200000.00, 2016, "Blue");
 		fz.bikeInfo();
-
+//
 		Bike re = new Bike("Classic", "Royal Enfield");
 		re.bikeInfo();
 
