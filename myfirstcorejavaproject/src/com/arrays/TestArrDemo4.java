@@ -10,13 +10,13 @@ public class TestArrDemo4 {
 		double sum = 0;
 		double avg = 0;
 
-//		for (int m : marks) {
-//			sum += m;
-//		}
-
-		for (int i = 0; i < marks.length; i++) {
-			sum = sum + marks[i];
+		for (int m : marks) {
+			sum += m;
 		}
+
+//		for (int i = 0; i < marks.length; i++) {
+//			sum = sum + marks[i];
+//		}
 		avg = sum / marks.length;
 
 		System.out.println("Sum of the marks : " + sum);
